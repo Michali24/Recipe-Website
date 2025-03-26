@@ -41,7 +41,7 @@ The system allows users to filter recipes by category, view detailed recipe info
 
 ---
 
-## Smart Ranking Algorithm – TOP10 Page
+## Smart Ranking Algorithm – TOP 10 Recipes
 
 The platform includes a dedicated page that displays the **Top 10 recipes**, based on a custom **greedy algorithm** I developed.
 
