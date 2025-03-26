@@ -1,4 +1,4 @@
-# 'CookMe' Recipe Website – Interactive and Secure Recipe Management System
+# 'CookMe' Recipe Website
 
 ---
 
