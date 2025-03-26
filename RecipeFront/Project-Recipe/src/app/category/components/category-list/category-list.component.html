@@ -1,0 +1,13 @@
+@if (!isLoading && categories.length > 0) {
+  <div class="category-container">
+    @for (category of categories; track category.id) {
+    <div class="category-card" (click)="goToRecipes(category.id)">
+      <img [src]="imageMap[category.id]" alt="{{ category.categoryName }}">
+      <button class="category-button">
+        <h3>{{ category.categoryName }}</h3>
+        <p>{{ category.description }}</p>
+      </button>
+    </div>
+    }
+  </div>
+  }

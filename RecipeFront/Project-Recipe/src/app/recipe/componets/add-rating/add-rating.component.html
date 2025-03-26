@@ -1,0 +1,28 @@
+<div class="rating-container">
+  <div class="rating-form">
+    @if (errorMessage) {
+      <p class="error-message">{{ errorMessage }}</p>
+    }
+    <form [formGroup]="rating">
+      <h4>Add rating</h4>
+      <mat-form-field appearance="outline">
+        <mat-label>Rating (1-5)</mat-label>
+        <input matInput type="number" formControlName="ratingValue" min="1" max="5">
+        
+        @if (ratingValueControl?.invalid && (ratingValueControl?.dirty || ratingValueControl?.touched)) {
+          <mat-error>A value between 1 and 5 is required</mat-error>
+        }
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="addRating()" [disabled]="rating.invalid || isSubmitting">
+        @if (isSubmitting) {
+          <mat-icon>hourglass_top</mat-icon>
+          <span>send...</span>
+        } @else {
+          <span>send rating...</span>
+        }
+      </button>
+    </form>
+  </div>
+  <img class="rating-img" src="../../../../assets/images/t10.png">
+</div>

@@ -1,0 +1,28 @@
+
+
+
+<mat-toolbar color="primary" class="navbar">
+  <div class="logo-container">
+    <img src="../../assets/images/icon1.png" alt="CookMe" class="logo" />
+  </div>
+  <span class="spacer"></span>
+  <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    <mat-icon>home</mat-icon>
+    Home
+  </a>
+  <a mat-button routerLink="/categories" routerLinkActive="active">Categories</a>
+  <a mat-button routerLink="/recipes" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Recipes</a>
+  <a mat-button routerLink="/recipes/top10" routerLinkActive="active">Top 10</a>
+  <a mat-button routerLink="/user/login" routerLinkActive="active">
+    <mat-icon>account_circle</mat-icon>
+    Login
+  </a>
+  <a mat-button routerLink="/user" routerLinkActive="active">
+    <mat-icon>person_add</mat-icon>
+    Join
+  </a>
+</mat-toolbar>
+
+
+
+

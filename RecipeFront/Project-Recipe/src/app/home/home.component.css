@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* מונע גלילה מיותרת */
+}
+
+.wave-container svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* תמונה שנייה שתופיע למטה */
+.first-image {
+  display: block;
+  /* למרכז את התמונה מתחת לתמונה הראשונה */
+  width: 100%;
+  /* אפשר לשנות לגודל הרצוי */
+  max-height: 1000px;
+  object-fit: cover;
+  /* שומר שהתמונה לא תמתח */
+}
+
+/* ✅ קונטיינר שמכיל את התמונה השנייה, הכותרת והכפתור */
+.second-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  /* מתאים לגודל מסוים */
+  margin: auto;
+  text-align: center;
+  /* ממקם את הכותרת באמצע */
+}
+
+/* ✅ עיצוב התמונה השנייה */
+.second-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* עיצוב הכותרת */
+h1 {
+  color: #000000;
+  /* צבע כחול */
+  font-size: 2.5rem;
+  /* גודל כותרת */
+  text-align: left;
+  /* יישור טקסט לשמאל */
+  margin-left: 20px;
+  /* מרווח קטן מהקצה */
+  font-weight: bold;
+  /* טקסט מודגש */
+  margin-top: 60px;
+  font-family: 'Dancing Script', cursive;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.button {
+  display: flex;
+  /* מאפשר יישור מרכזי של התוכן */
+  align-items: center;
+  /* ממקם את הטקסט אנכית במרכז */
+  justify-content: center;
+  /* ממקם את הטקסט אופקית במרכז */
+  background-color: #277ea7b0;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 60%;
+  /* הכפתור יתפוס 60% מרוחב הקונטיינר */
+  max-width: 350px;
+  /* מונע מהכפתור להיות רחב מדי */
+  min-width: 200px;
+  /* מבטיח שלא יהיה קטן מדי במסכים קטנים */
+  height: 10vh;
+  /* גובה מותאם למסך */
+  max-height: 80px;
+  /* הגבלת הגובה המקסימלי */
+  min-height: 50px;
+  /* גובה מינימלי */
+  padding: 0;
+  /* מסיר ריווח פנימי נוסף */
+  margin-top: 40px;
+  margin-left: auto;
+  /* ⭐ זה מיישר לימין */
+  margin-right: 50px;
+  /* ⭐ מוסיף רווח מצד ימין */
+  text-align: center;
+  /* מוודא שהטקסט מיושר */
+  font-size: 1.5rem;
+  /* הופך את הטקסט לקריא יותר */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #9f3791e7;
+}
+
+h4 {
+  color: #000000;
+  /* צבע כחול */
+  font-size: 2.5rem;
+  /* גודל כותרת */
+  text-align: left;
+  /* יישור טקסט לשמאל */
+  margin-left: 20px;
+  /* מרווח קטן מהקצה */
+  font-weight: bold;
+  /* טקסט מודגש */
+  margin-top: 60px;
+  font-family: 'Dancing Script', cursive;
+}
+
+h3 {
+  color: #000000;
+  /* צבע כחול */
+  font-size: 2.5rem;
+  /* גודל כותרת */
+  text-align: left;
+  /* יישור טקסט לשמאל */
+  margin-right: 20px;
+  /* מרווח קטן מהקצה */
+  font-weight: bold;
+  /* טקסט מודגש */
+  margin-top: 60px;
+  font-family: 'Dancing Script', cursive;
+  text-align: right;
+}
+
+.custom-divider {
+  border: none;
+  border-top: 3px solid #000000;
+  /* צבע ועובי הקו */
+  margin: 50px auto;
+  /* רווח מעל ומתחת */
+  width: 90%;
+  /* כמה אחוז מהמסך הקו יתפוס */
+}
+
+
+

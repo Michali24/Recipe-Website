@@ -1,0 +1,37 @@
+@if (isLoading) {
+  <div class="info-card loading-card">Loading data...</div>
+  }
+  
+  @if (errorMessage) {
+  <div class="info-card error-card">{{ errorMessage }}</div>
+  }
+  
+  <div class="header-image-container">
+    <img src="../../../../assets/images/banerPoto.jpg" alt="Header Image" class="header-image">
+  </div>
+  
+  @if (!isLoading) {
+  @if (recipe != null) {
+  <div class="recipe-list">
+    <app-recipe-ingredient [recipe]="recipe"></app-recipe-ingredient>
+  </div>
+  }
+  
+  @if (ingredientsByRecipeId.length > 0) {
+  <h5 class="recipe-subtitle"><strong>Ingredients:</strong></h5>
+  <ul class="ingredients-list">
+    @for (ingredient of ingredientsByRecipeId; track ingredient.id) {
+    <li class="ingredient-item">
+      <p>{{ ingredient.ingredientName }} - {{ ingredient.quantity }}</p>
+    </li>
+    }
+  </ul>
+  }
+  
+  @if(recipe!=null){
+  <h5 class="instructions-title"><strong>Instructions:</strong></h5>
+  <p class="instructions-text" [innerHTML]="recipe.preparationInstructions | splitByPipe"></p>}
+  <div class="ingredient-card">
+    <button class="rating-button" (click)="addRating()">Add rating</button>
+  </div>
+  }

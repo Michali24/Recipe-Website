@@ -1,0 +1,50 @@
+<div class="form-container">
+  <form [formGroup]="logInForm" class="login-form">
+
+    @if (successMessage) {
+    <div class="success-container">
+      ✅ {{ successMessage }}
+    </div>
+    }
+    @if (showErrorMessage) {
+    <div class="error-container">
+      <span class="error-icon">❗</span>
+      <span class="error-text">Please fill in all required fields correctly.</span>
+    </div>
+    }
+
+    <h2>Login</h2>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>User Name</mat-label>
+      <input matInput formControlName="userName">
+      @if(logInForm.controls['userName'].invalid && (logInForm.controls['userName'].dirty ||
+      logInForm.controls['userName'].touched)){
+      <mat-error> You must enter a username</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Password</mat-label>
+      <input matInput [type]="isPasswordVisible ? 'text' : 'password'" formControlName="password">
+      <button mat-icon-button matSuffix (click)="togglePasswordVisibility()" aria-label="Toggle password visibility">
+        @if (isPasswordVisible) {
+        <mat-icon>visibility</mat-icon>
+        } @else {
+        <mat-icon>visibility_off</mat-icon>
+        }
+      </button>
+      @if (logInForm.controls['password'].invalid && logInForm.controls['password'].touched) {
+      <mat-error>You must enter a password</mat-error>
+      }
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="full-width" [disabled]="logInForm.invalid || isSubmitting"
+      (click)="login()">
+      {{ isSubmitting ? 'Logging in...' : 'Log In' }}
+    </button>
+  </form>
+
+  <div class="center-container">
+    <p>Don't have an account?
+      <a (click)="navigateToSignUp()" class="signup-link">Create one now - Sign Up</a>
+    </p>
+  </div>
+</div>

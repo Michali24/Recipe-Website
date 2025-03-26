@@ -1,0 +1,19 @@
+.header-image-container {
+  width: 100%;
+  text-align: center;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  /* ניתן לשנות את הגובה המקסימלי בהתאם לצורך */
+  object-fit: cover;
+}
+
+.recipes-by-category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin: 40px;
+}

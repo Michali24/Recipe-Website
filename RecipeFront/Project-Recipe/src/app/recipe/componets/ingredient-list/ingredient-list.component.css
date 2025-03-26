@@ -1,0 +1,154 @@
+.header-image-container {
+    width: 100%;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    /* ניתן לשנות את הגובה המקסימלי בהתאם לצורך */
+    object-fit: cover;
+}
+
+/* עיצוב מיוחד לכרטיסיות טעינה ושגיאה */
+.loading-card {
+    background: #f0f0f0;
+    color: #555;
+    font-weight: bold;
+}
+
+.error-card {
+    background: #ffdddd;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* עיצוב כותרות */
+.recipe-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: #ff7e5f;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-subtitle {
+    margin-inline-start: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    text-align: flex;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* עיצוב הוראות ההכנה */
+.instructions-text {
+    margin-left: 20px;
+    font-size: 16px;
+    /* גודל קריא ונוח */
+    font-weight: 400;
+    color: #333;
+    /* צבע טקסט כהה */
+    background: #fff8e1;
+    /* רקע עדין בצבע קרם */
+    border-left: 5px solid #ff7e5f;
+    /* קו צבעוני לצד ההוראות */
+    padding: 15px;
+    /* רווח פנימי מסביב */
+    border-radius: 8px;
+    /* עיגול פינות */
+    line-height: 1.6;
+    /* מרווח שורות נוח */
+    text-align: left;
+    /* יישור לטקסט רגיל */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* צל עדין */
+    margin-top: 10px;
+    /* מרווח מעל */
+}
+
+/* עיצוב לכותרת של הוראות הכנה */
+.instructions-title {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff7e5f;
+    text-align: flex;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* אפקט מיוחד עבור רשימה של שלבי הכנה */
+.instructions-text ol {
+    padding-left: 20px;
+    /* הזחה פנימית */
+    list-style-type: decimal;
+    /* רשימה ממוספרת */
+}
+
+.instructions-text ol li {
+    margin-bottom: 8px;
+    /* רווח בין שלבים */
+    font-weight: 500;
+}
+
+/* עיצוב רשימות */
+.recipe-details,
+.ingredients-list {
+    margin-left: 20px;
+
+    list-style-type: none;
+    padding: 0;
+    /* margin: 0; */
+}
+
+.ingredient-item {
+    font-size: 14px;
+    color: #333;
+    padding: 5px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* כרטיסיית מרכיבים */
+.ingredient-card {
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+    padding: 10px;
+    text-align: center;
+    color: rebeccapurple;
+    margin-top: 10px;
+}
+
+/* כפתור דירוג */
+.rating-button {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.rating-button:hover {
+    background-color: #e0654c;
+}
+
+.recipe-list {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    margin: 20px;
+    width: 400px;
+}

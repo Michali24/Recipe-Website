@@ -1,0 +1,33 @@
+<div class="recipe-container">
+  <div class="recipe-box" [appQuickRecipe]="recipe.preparationTime">
+    <div class="recipe-header">
+      <img src="../../../../assets/images/menu.png" alt="Recipe Icon" class="recipe-icon">
+      <h4 class="recipe-title">{{ recipe.title }}</h4>
+    </div>
+    <div class="recipe-details">
+      <p><strong>Description:</strong> {{ recipe.description }}</p>
+      <p><strong>Recipe Author 👨‍🍳:</strong> {{ recipe.recipeAuthor }}</p>
+      <p><strong>Difficulty Level:</strong> {{ getDifficultyLabel(recipe.difficultyLevel) }}</p>
+      <p><strong>Preparation Time:</strong> {{ recipe.preparationTime }} minutes</p>
+      <p><strong>Num Of Ingredients:</strong> {{ recipe.numOfIngredients }}</p>
+      <div class="num-of-clicks">
+        <i class="fa fa-eye"></i>
+        <span>{{ recipe.numOfClicks }}</span><span style="margin-left: 5px;">Views</span>
+      </div>
+      <div class="stars-box">
+        <p><strong>Rating:</strong>
+          <span class="stars">
+            <ng-container *ngFor="let star of getStars(recipe.averageRating); let i = index">
+              <i class="fa" [ngClass]="{
+                  'fa-star': star === 1, 
+                  'fa-star-half-alt': star === 0.5, 
+                  'fa-star-o': star === 0
+                }"></i>
+            </ng-container>
+          </span>
+          ({{ recipe.averageRating | number: '1.1-1' }})
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

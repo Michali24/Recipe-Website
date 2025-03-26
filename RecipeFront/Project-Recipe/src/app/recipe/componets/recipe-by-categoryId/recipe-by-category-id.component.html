@@ -1,0 +1,16 @@
+<div class="header-image-container">
+  <img src="../../../../assets/images/banerPoto.jpg" alt="Header Image" class="header-image">
+</div>
+@if(errorMessage){
+<p>{{errorMessage}}</p>
+}
+
+@if (!isLoading && recipesByCategoryId.length > 0) {
+<div class="recipes-by-category-list">
+  @for(recipe of recipesByCategoryId; track recipe.id) {
+  <div (click)="goToRecipe(recipe)">
+    <app-recipe-ingredient [recipe]="recipe"></app-recipe-ingredient>
+  </div>
+  }
+</div>
+}

@@ -1,0 +1,118 @@
+/* הוספת תמונת רקע לכל הדף */
+.form-container {
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-background {
+    width: 2200%;
+    /* height: 100%; */
+    display: block;
+    max-height: 20100px;
+    object-fit: cover;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    /* מרכז אופקית */
+    align-items: center;
+    /* מרכז אנכית */
+    text-align: center;
+}
+
+.signup-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.error-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fdecea;
+    /* רקע אדום בהיר */
+    color: #b71c1c;
+    /* אדום כהה לטקסט */
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #f5c6cb;
+    /* מסגרת אדומה בהירה */
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.error-icon {
+    font-size: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.snackbar-error {
+    background: #d32f2f !important;
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.snackbar-success {
+    background: #388e3c !important;
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.signup-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.error-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fdecea;
+    /* רקע אדום בהיר */
+    color: #b71c1c;
+    /* אדום כהה לטקסט */
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #f5c6cb;
+    /* מסגרת אדומה בהירה */
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.error-icon {
+    font-size: 20px;
+}

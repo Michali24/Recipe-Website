@@ -1,0 +1,21 @@
+@if (isLoading) {
+<div>Loading data</div>
+}
+
+@if (errorMessage) {
+<div>{{ errorMessage }}</div>
+}
+
+<div class="header-image-container">
+  <img src="../../../../assets/images/banerPoto.jpg" alt="Header Image" class="header-image">
+</div>
+
+@if (!isLoading && recipes.length > 0) {
+<div class="recipe-list">
+  @for (recipe of recipes; track recipe.id) {
+  <div class="recipe-card" (click)="goToRecipe(recipe)">
+    <app-recipe-ingredient [recipe]="recipe"></app-recipe-ingredient>
+  </div>
+  }
+</div>
+}

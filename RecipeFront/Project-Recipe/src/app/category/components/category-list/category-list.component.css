@@ -1,0 +1,132 @@
+/* ממרכז את הכרטיסיות באמצע הדף */
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* ממקם את הכרטיסיות במרכז הדף */
+  gap: 250px;
+  padding: 80px 0;
+}
+
+/* עיצוב הכרטיסיות */
+.category-card {
+  width: 550px;
+  /* הופך את הכרטיסיה ליותר מלבנית */
+  height: 350px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* מוסיף צל עדין */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* אפקט ריחוף להבלטת הכרטיסיה */
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* עיצוב הכפתור בתוך הכרטיסיה */
+.category-button {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  /* צבע רקע מדורג */
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+/* שינוי צבע בהובר */
+.category-button:hover {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+/* עיצוב לכותרת ולתיאור */
+.category-button h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.category-button p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 75px 100px;
+  padding: 40px 0;
+}
+
+.category-card {
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* עיצוב התמונה */
+.category-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* עיצוב הכפתור */
+.category-button {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.category-button:hover {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+
+
+

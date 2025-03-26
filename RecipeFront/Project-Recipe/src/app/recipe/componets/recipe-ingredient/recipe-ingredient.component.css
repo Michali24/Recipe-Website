@@ -1,0 +1,114 @@
+.recipe-container {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+/* כרטיסייה אחת עם מסגרת בלבד */
+.recipe-box {
+  /* כרטיסייה צרה יותר */
+  min-height: 200px;
+  /* שלוש כרטיסיות בשורה עם מרווחים */
+  /* הגבלת רוחב למניעת פריסה רחבה מדי */
+  border: 2px solid #000000;
+  /* צבע מסגרת */
+  border-radius: 12px;
+  /* עיגול פינות */
+  /* padding: 20px; */
+  padding: 25px;
+  background: transparent;
+  /* רקע שקוף */
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.recipe-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recipe-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  /* מבטיח שהתמונה תוצג */
+}
+
+/* כותרת המתכון */
+.recipe-title {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  color: #ff7e5f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* עיצוב הפסקאות */
+.recipe-details p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* הדגשת הטקסט */
+.recipe-details p strong {
+  color: #ff7e5f;
+}
+
+/* עיצוב למספר הצפיות עם אייקון */
+.num-of-clicks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+  background: rgba(255, 126, 95, 0.1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+/* עיצוב האייקון */
+.num-of-clicks i {
+  font-size: 20px;
+  color: #555;
+  /* צבע אייקון טיפה כהה */
+  margin-right: 5px;
+  /* רווח קטן בין האייקון למספר */
+}
+
+/* עיצוב לדירוג הכוכבים */
+.stars-box {
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  border-top: 2px solid #ff7e5f;
+}
+
+/* עיצוב הכוכבים */
+.stars {
+  font-size: 18px;
+}
+
+.stars .fa-star,
+.stars .fa-star-half-alt {
+  color: #ffcc00;
+}
+
+.stars .fa-star-o {
+  color: #ccc;
+}

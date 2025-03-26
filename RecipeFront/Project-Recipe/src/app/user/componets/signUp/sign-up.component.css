@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.sign-up-container {
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #3f51b5;
+  /* צבע כחול-סגול של אנגולר מטיריאל */
+}
+
+/* ✅ טופס */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* ✅ התאמה לרוחב מלא */
+.full-width {
+  width: 100%;
+}
+
+/* ✅ הודעת שגיאה */
+.error-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fdecea;
+  color: #b71c1c;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 1px solid #f5c6cb;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.error-icon {
+  font-size: 20px;
+}
+
+/* ✅ הודעת הצלחה */
+.success-container {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #c3e6cb;
+  margin-bottom: 10px;
+}
+
+.snackbar-error {
+  background: #d32f2f !important;
+  color: white !important;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  padding: 12px;
+}

@@ -1,0 +1,52 @@
+.navbar {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* === קישורי ניווט - mat-button === */
+::ng-deep a[mat-button] {
+  /* חשוב מאוד - כך נעקוף את ברירת המחדל */
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+/* === במעבר עכבר על הקישור === */
+::ng-deep a[mat-button]:hover {
+  /* color: rgb(248, 207, 23) !important; */
+  background-color: #0056b3;
+  color: white !important;
+}
+
+/* === קישור פעיל === */
+::ng-deep a[mat-button].active {
+  color: white !important;
+  text-decoration: underline;
+}
+
+/* איקונים */
+.navbar mat-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+}

@@ -1,0 +1,85 @@
+
+
+
+<div class="sign-up-container">
+  @if (successMessage) {
+  <div class="success-container">
+    ✅ {{ successMessage }}
+  </div>
+  }
+  @if (showErrorMessage) {
+  <div class="error-container">
+    <span class="error-icon">❗</span>
+    <span class="error-text">Please fill in all required fields correctly.</span>
+  </div>
+  }
+
+  <div class="title">
+    <h2>cookMe - Sign up</h2>
+  </div>
+  <form [formGroup]="signupForm" class="signup-form">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>User Name</mat-label>
+      <input matInput formControlName="userName">
+      @if (signupForm.controls['userName'].invalid && (signupForm.controls['userName'].dirty ||
+      signupForm.controls['userName'].touched) ) {
+      <mat-error>
+        @if (signupForm.controls['userName'].errors?.['required']) {
+        You must enter an UserName
+        }
+        @if( signupForm.controls['userName'].errors?.['minlength']){
+        UserName must be at least 3 characters long.
+        }
+      </mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="email">
+      @if (signupForm.controls['email'].invalid && (signupForm.controls['email'].dirty ||
+      signupForm.controls['email'].touched)) {
+      <mat-error>
+        @if (signupForm.controls['email'].errors?.['required']) {
+        You must enter an email
+        } @else if (signupForm.controls['email'].errors?.['email']) {
+        Invalid email format
+        } @else if (signupForm.controls['email'].errors?.['maxlength']) {
+        Email is too long (max 320 characters)
+        }
+      </mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Password</mat-label>
+      <input matInput [type]="isPasswordVisible ? 'text' : 'password'" formControlName="password">
+
+      <button mat-icon-button matSuffix (click)="togglePasswordVisibility()" type="button">
+        @if (isPasswordVisible) {
+        <mat-icon>visibility</mat-icon>
+        } @else {
+        <mat-icon>visibility_off</mat-icon>
+        }
+      </button>
+      @if (signupForm.controls['password'].invalid &&
+      (signupForm.controls['password'].dirty || signupForm.controls['password'].touched)) {
+      <mat-error>
+        @if (signupForm.controls['password'].errors?.['required']) {
+        You must enter a password
+        } @else if (signupForm.controls['password'].errors?.['minlength']) {
+        Password must be at least 8 characters
+        } @else if (signupForm.controls['password'].errors?.['pattern']) {
+        Password must contain at least one uppercase letter and one digit.
+        }
+      </mat-error>
+      }
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="full-width" [disabled]="signupForm.invalid || isSubmitting"
+      (click)="signUp()">
+      @if (isSubmitting) {
+      Signing up...
+      } @else {
+      Sign Up
+      }
+    </button>
+  </form>
+</div>

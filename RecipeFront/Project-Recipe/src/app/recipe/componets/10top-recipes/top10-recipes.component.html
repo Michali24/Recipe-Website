@@ -1,0 +1,12 @@
+<div class="header-image-container">
+    <img src="../../../../assets/images/banerPoto.jpg" alt="Header Image" class="header-image">
+</div>
+@if (!isLoading && top10.length > 0) {
+<div class="recipe-top10-list">
+    @for(recipeFromTop10 of top10; track recipeFromTop10.id){
+    <div (click)="goToRecipe(recipeFromTop10)">
+        <app-recipe-ingredient [recipe]="recipeFromTop10"></app-recipe-ingredient>
+    </div>
+    }
+</div>
+}
