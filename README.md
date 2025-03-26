@@ -4,7 +4,7 @@
 
 ## Overview
 
-RecipeApp is a web-based recipe management system, developed using Angular for the frontend and ASP.NET Core for the backend, following a 3-Tier Architecture structure.  
+CookMe Recipe Website is a web-based recipe management system, developed using Angular for the frontend and ASP.NET Core for the backend, following a 3-Tier Architecture structure.  
 The system allows users to filter recipes by category, view detailed recipe information, manage user permissions, rate recipes, and display the top 10 recipes based on a smart scoring algorithm.
 
 ---
