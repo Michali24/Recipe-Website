@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/G+TQ+KCCKc=",
+  "dgSpecHash": "BhrDm1zgBXA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebStie.Core\\RecipeWebStie.Core.csproj",
+  "projectFilePath": "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebStie.Core\\RecipeWebStie.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gavri\\.nuget\\packages\\automapper\\6.2.2\\automapper.6.2.2.nupkg.sha512",
     "C:\\Users\\gavri\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.36\\microsoft.aspnetcore.authentication.jwtbearer.6.0.36.nupkg.sha512",

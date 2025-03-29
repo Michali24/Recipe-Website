@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipeWebStie.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3f7827a50a4056d67f65cb4ffd1f7ca2ec72563")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipeWebStie.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecipeWebStie.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

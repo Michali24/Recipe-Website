@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fPFNjBDWcqs=",
+  "dgSpecHash": "kjtqpk9RhNY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebSite\\RecipeWebSite.csproj",
+  "projectFilePath": "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebSite\\RecipeWebSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gavri\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
     "C:\\Users\\gavri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",

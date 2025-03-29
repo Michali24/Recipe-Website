@@ -3171,11 +3171,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebSite\\RecipeWebSite.csproj",
+      "projectUniqueName": "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebSite\\RecipeWebSite.csproj",
       "projectName": "RecipeWebSite",
-      "projectPath": "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebSite\\RecipeWebSite.csproj",
+      "projectPath": "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebSite\\RecipeWebSite.csproj",
       "packagesPath": "C:\\Users\\gavri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebSite\\obj\\",
+      "outputPath": "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebSite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3196,14 +3196,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebSite.Service\\RecipeWebSite.Service.csproj": {
-              "projectPath": "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebSite.Service\\RecipeWebSite.Service.csproj"
+            "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebSite.Service\\RecipeWebSite.Service.csproj": {
+              "projectPath": "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebSite.Service\\RecipeWebSite.Service.csproj"
             },
-            "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebStie.Core\\RecipeWebStie.Core.csproj": {
-              "projectPath": "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebStie.Core\\RecipeWebStie.Core.csproj"
+            "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebStie.Core\\RecipeWebStie.Core.csproj": {
+              "projectPath": "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebStie.Core\\RecipeWebStie.Core.csproj"
             },
-            "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebStie.Data\\RecipeWebStie.Data.csproj": {
-              "projectPath": "C:\\Users\\gavri\\Desktop\\24-02-25-C# Project -With JWT 4\\RecipeWebSite\\RecipeWebStie.Data\\RecipeWebStie.Data.csproj"
+            "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebStie.Data\\RecipeWebStie.Data.csproj": {
+              "projectPath": "C:\\Users\\gavri\\Desktop\\RecipeWebsite\\RecipeBackend\\RecipeWebSite\\RecipeWebStie.Data\\RecipeWebStie.Data.csproj"
             }
           }
         }

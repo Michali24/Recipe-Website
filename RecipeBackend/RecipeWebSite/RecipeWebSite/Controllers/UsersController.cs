@@ -44,7 +44,7 @@ namespace RecipeWebSite.Controllers
             {
                 return NotFound();
             }
-            var userDto = _mapper.Map<User>(user);
+            var userDto = _mapper.Map<UserDto>(user);
             return Ok(userDto);
         }
 
@@ -57,7 +57,7 @@ namespace RecipeWebSite.Controllers
             {
                 return NotFound();
             }
-            var userDto = _mapper.Map<User>(user);
+            var userDto = _mapper.Map<UserDto>(user);
             return Ok(userDto);
         }
 
