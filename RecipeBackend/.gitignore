@@ -1,0 +1,32 @@
+ 
+# תיקיות וקבצים של VS Code ו-VS
+.vscode/
+*.suo
+*.user
+*.cache
+*.pdb
+*.db
+
+# קבצים זמניים שנוצרים על ידי build
+bin/
+obj/
+*.dll
+*.exe
+*.log
+
+# קבצים של NuGet
+*.nupkg
+packages/
+
+# קבצים של Visual Studio
+RecipeWebSite/.vs/
+RecipeWebSite/**/obj/
+RecipeWebSite/**/bin/
+RecipeWebSite/**/project.lock.json
+RecipeWebSite/**/project.assets.json
+RecipeWebSite/**/.vs/
+RecipeWebSite/**/.DS_Store
+
+# קבצים של מערכת הפעלה
+Thumbs.db
+.DS_Store
