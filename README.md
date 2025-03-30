@@ -100,7 +100,7 @@ Finally, the algorithm selects the top 10 recipes with the **highest weighted sc
 ### Frontend (Angular)
 
 ```bash
-git clone https://github.com/USERNAME/RecipeApp.git
+git clone https://github.com/USERNAME/RecipeWebsite.git
 cd RecipeApp
 npm install
 ng serve
