@@ -78,7 +78,7 @@ Finally, the algorithm selects the top 10 recipes with the **highest weighted sc
 ---
 
 ## Screenshots
-![github](images/github.png)
+![github](RecipeFront/Project-Recipe/src/assets/images/github.png)
 
 ---
 
