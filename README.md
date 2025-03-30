@@ -101,6 +101,6 @@ Finally, the algorithm selects the top 10 recipes with the **highest weighted sc
 
 ```bash
 git clone https://github.com/Michali24/Recipe-Website.git
-cd RecipeApp
+cd Recipe-Website
 npm install
 ng serve
