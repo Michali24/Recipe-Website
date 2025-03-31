@@ -10,7 +10,6 @@ namespace RecipeWebStie.Data
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
-
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
     }
 }

@@ -37,7 +37,7 @@ namespace RecipeWebSite.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<User> Get(int id)
+        public ActionResult<UserDto> Get(int id)
         {
             var user = _userService.GetUserById(id);
             if (user == null)
@@ -50,7 +50,7 @@ namespace RecipeWebSite.Controllers
 
         [HttpGet("GetUserByName")]
         [AllowAnonymous]
-        public ActionResult<User> Get(string userName)
+        public ActionResult<UserDto> Get(string userName)
         {
             var user = _userService.GetUserByName(userName);
             if (user == null)

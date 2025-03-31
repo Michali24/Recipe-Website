@@ -42,7 +42,6 @@ namespace RecipeWebStie.Data.Repositories
             {
                 existingRating.RatingValue = rating.RatingValue;
                 existingRating.RecipeId = rating.RecipeId;
-                existingRating.UserId = rating.UserId;
                 _datacontext.SaveChanges();
             }
         }

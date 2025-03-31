@@ -46,23 +46,6 @@ namespace RecipeWebSite.Controllers
             return Ok(_mapper.Map<RatingDto>(rating));
         }
 
-        //[HttpPost("createRating")]
-        //public async Task<IActionResult> CreateRating([FromBody] RatingPostModel ratingPostModel)
-        //{
-        //    if (ratingPostModel == null)
-        //    {
-        //        return BadRequest("Invalid rating data.");
-        //    }
-
-        //    var rating = _mapper.Map<Rating>(ratingPostModel);
-
-        //    await _ratingService.AddRatingAsync(rating); // הוספת הדירוג ושמירתו במסד הנתונים
-
-        //    double updatedAverage = await _recipeService.CalculateAverageRating(rating.RecipeId);
-
-        //    return CreatedAtAction(nameof(GetRating), new { id = rating.Id }, _mapper.Map<RatingDto>(rating));
-        //}
-
         [HttpPost("createRating")]
         public async Task<ActionResult<RatingDto>> CreateRating([FromBody] RatingPostModel ratingPostModel)
         {
@@ -72,11 +55,8 @@ namespace RecipeWebSite.Controllers
             }
 
             var rating = _mapper.Map<Rating>(ratingPostModel);
-
-            await _ratingService.AddRatingAsync(rating); // הוספת הדירוג ושמירתו במסד הנתונים
-
+            await _ratingService.AddRatingAsync(rating);
             double updatedAverage = await _recipeService.CalculateAverageRating(rating.RecipeId);
-
             return CreatedAtAction(nameof(GetRating), new { id = rating.Id }, _mapper.Map<RatingDto>(rating));
         }
 
@@ -89,7 +69,6 @@ namespace RecipeWebSite.Controllers
             {
                 return NotFound();
             }
-
             _mapper.Map(ratingPutModel, rating);
             _ratingService.UpdateRating(id, rating);
             return NoContent();

@@ -8,7 +8,8 @@ namespace RecipeWebSite.Mapping
     public class PostModelsMappingProfile : Profile
     {
         public PostModelsMappingProfile()
-        {            CreateMap<UserPostModel, User>();
+        {   
+            CreateMap<UserPostModel, User>();
             CreateMap<Recipe, RecipeDto>();
             CreateMap<RecipePutModel, Recipe>().ForMember(dest => dest.NumOfClicks, opt => opt.MapFrom(src => src.NumOfClicks))
                                                .ForMember(dest => dest.NumberOfRatings, opt => opt.MapFrom(src => src.NumberOfRatings))

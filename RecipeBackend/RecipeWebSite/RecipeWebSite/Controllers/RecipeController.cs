@@ -53,20 +53,6 @@ public class RecipeController : ControllerBase
         return Ok(recipeDto);
     }
 
-    //[HttpGet("category/{categoryId}")]
-    //[AllowAnonymous]
-    //public async Task<IActionResult> GetRecipesByCategory(int categoryId)
-    //{
-    //    var recipes = await _recipeService.GetRecipesByCategoryAsync(categoryId);
-    //    var recipeDtos = _mapper.Map<List<RecipeDto>>(recipes);
-
-    //    if (recipes == null || recipes.Count == 0)
-    //    {
-    //        return NotFound("No recipes found for this category.");
-    //    }
-
-    //    return Ok(recipeDtos);
-    //}
     [HttpGet("category/{categoryId}")]
     [AllowAnonymous]
     public async Task<ActionResult<RecipeDto>> GetRecipesByCategory(int categoryId)
@@ -96,13 +82,6 @@ public class RecipeController : ControllerBase
         return NoContent();
     }
 
-    //[HttpGet("top10")]
-    //[AllowAnonymous]
-    //public async Task<IActionResult> GetTop10Recipes()
-    //{
-    //    var topRecipes = await _recipeService.GetTop10Recipes();
-    //    return Ok(topRecipes);
-    //}
     [HttpGet("top10")]
     [AllowAnonymous]
     public async Task<ActionResult<RecipeDto>> GetTop10Recipes()

@@ -35,20 +35,6 @@ namespace RecipeWebSite.Controllers
             return Ok(categoryDtos);
         }
 
-        //[HttpGet("{id}")]
-        //[AllowAnonymous]
-        //public async Task<IActionResult> GetCategoryById(int id)
-        //{
-        //    var category = await _categoryService.GetCategoryByIdAsync(id);
-
-        //    if (category == null)
-        //    {
-        //        return NotFound("Category not found.");
-        //    }
-
-        //    return Ok(category);
-        //}
-
         [HttpGet("{id}")]
         [AllowAnonymous]
         public async Task<ActionResult<CategoryDto>> GetCategoryById(int id)

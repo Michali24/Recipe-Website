@@ -22,14 +22,6 @@ namespace RecipeWebSite.Controllers
             _mapper = mapper;
         }
 
-        //[HttpGet]
-        //[AllowAnonymous]
-        //public IActionResult GetAllIngredients()
-        //{
-        //    var ingredients = _ingredientService.GetAllIngredients();
-        //    var ingredientDtos = _mapper.Map<List<IngredientDto>>(ingredients);
-        //    return Ok(ingredientDtos);
-        //}
         [HttpGet]
         [AllowAnonymous]
         public ActionResult<IngredientDto> GetAllIngredients()
@@ -38,19 +30,6 @@ namespace RecipeWebSite.Controllers
             var ingredientDtos = _mapper.Map<List<IngredientDto>>(ingredients);
             return Ok(ingredientDtos);
         }
-
-        //[HttpGet("{id}")]
-        //[AllowAnonymous]
-        //public IActionResult GetIngredient(int id)
-        //{
-        //    var ingredient = _ingredientService.GetIngredientById(id);
-        //    if (ingredient == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    var ingredientDto = _mapper.Map<IngredientDto>(ingredient);
-        //    return Ok(ingredientDto);
-        //}
 
         [HttpGet("{id}")]
         [AllowAnonymous]
@@ -65,14 +44,6 @@ namespace RecipeWebSite.Controllers
             return Ok(ingredientDto);
         }
 
-        //[HttpGet("recipe/{recipeId}")]
-        //[AllowAnonymous]
-        //public IActionResult GetIngredientsByRecipe(int recipeId)
-        //{
-        //    var ingredients = _ingredientService.GetIngredientsByRecipe(recipeId);
-        //    var ingredientDtos = _mapper.Map<List<IngredientDto>>(ingredients);
-        //    return Ok(ingredientDtos);
-        //}
         [HttpGet("recipe/{recipeId}")]
         [AllowAnonymous]
         public ActionResult<IngredientDto> GetIngredientsByRecipe(int recipeId)
