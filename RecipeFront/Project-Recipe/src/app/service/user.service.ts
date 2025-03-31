@@ -16,8 +16,8 @@ export class UserService {
   constructor(private _httpClient: HttpClient) {
   }
 
-  signUp(user: User): Observable<any> {
-    return this._httpClient.post<any>('https://localhost:7211/api/Users', user, {
+  signUp(user: User): Observable<User> {
+    return this._httpClient.post<User>('https://localhost:7211/api/Users', user, {
       headers: { 'Content-Type': 'application/json' }
     });
   }

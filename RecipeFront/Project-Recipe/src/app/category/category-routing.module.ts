@@ -10,6 +10,3 @@ export const routes: Route[] = [
   exports: [RouterModule]
 })
 export class CategoryRoutingModule { }
-
-
-
